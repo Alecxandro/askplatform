@@ -6,7 +6,7 @@
     <hr /> 
         <h4>Latest...</h4>
         <% questions.forEach(function(p) { %>
-         <a href="/"><%=   p.title  %></a>    <br>
+         <a href="/question/<%= p.id %>" ><%=   p.title  %></a>    <br>
             
     <% }) %>
 
