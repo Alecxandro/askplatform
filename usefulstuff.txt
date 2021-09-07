@@ -1,0 +1,4 @@
+#ForEach in EJS
+       <% prod.forEach(function(p) { %>
+        <%= p.name  %> 
+<% }) %>

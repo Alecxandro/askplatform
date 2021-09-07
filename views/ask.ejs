@@ -1,0 +1,30 @@
+<%- include('partials/header.ejs') %> 
+<body>
+    <%- include('partials/navbar.ejs') %> 
+    <div class="container">
+
+        <br>
+
+        <div class="card">
+            <div class="card-header">
+                <h1>Ask!</h1>
+            </div>
+
+            <div class="card-body">
+                <form method="POST" action="/savequestion">
+
+                    <input type="text" placeholder="Question title" class="form-control" id="question-title" name="questionTitle"><br>
+                    <textarea name="questionDescription" id="" cols="30" rows="10" class="form-control"
+                        placeholder="Describe your question here..."></textarea>
+                    <br>
+                    <button class="btn btn-success"><b>Send Question!</b></button>
+                </form>
+            </div>
+        </div>
+
+
+
+    </div>
+  
+</body>
+<%- include('partials/footer.ejs') %>

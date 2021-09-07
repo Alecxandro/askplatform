@@ -1,0 +1,16 @@
+<%- include('partials/header.ejs') %>
+<body>
+    <%- include('partials/navbar.ejs') %>
+    <div class="container">
+        <h1>Ask & Answer Platform</h1>
+    <hr /> 
+        <h4>Latest...</h4>
+        <% questions.forEach(function(p) { %>
+         <a href="/"><%=   p.title  %></a>    <br>
+            
+    <% }) %>
+
+ 
+    </div>
+</body>
+<%- include('partials/footer.ejs') %>
