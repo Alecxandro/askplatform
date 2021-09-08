@@ -56,7 +56,7 @@ app.get("/question/:id", (req, res) => {
   }).then((question) => {
     if (question != undefined) {
       Answers.findAll({
-        where: { questionId: question.id },
+        where: { questionId: question.id },order:[['id','DESC']]
       }).then((answr) => {
         res.render("question", {
           question: question,
