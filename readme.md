@@ -1,10 +1,22 @@
-#Quick Setup
+## Overview
 
--npm install express --save;
--npm install ejs --save
+This a very simple project where any user *(no registration required, maybe this featured will be released)* can ask and answer questions. 
+Ask Platform is meant mainly for learning purposes, but you're free to do whatever you want to with this code. 
 
-#Backend
 
--npm install body-parser --save; //this lib makes possible to get data from inputs 
--npm install --save sequelize;  //manage database with js
--npm install --save mysql2;
+## Quick Setup
+
+* NodeJS, MySQL Server and MySQL Workbench *(desired)* installed. 
+
+* npm install express --save
+* npm install ejs --save
+
+## Backend
+
+* npm install body-parser --save 
+* npm install --save sequelize
+* npm install --save mysql2
+
+## MySQL Workbench
+
+* Create a Database called *askplatform*
